@@ -29,6 +29,7 @@ module.exports = {
     if(user.accessToken !== token) return { ok: false }
     return { ok: true, data: {
       email: user.email,
+      name: user.name
     }}
   },
   logout: async (token) => {
